@@ -2,17 +2,49 @@
 #https://support.posit.co/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2
 
 
-#update.packages(ask = FALSE, checkBuilt = TRUE)
-
 # sessionInfo()
+# packageVersion("tidyverse")
+
+# check if installed: 
+"kableExtra" %in% rownames(installed.packages())  # T or F 
+# also check 
+.libPaths()
+# [1] "/home/yzheng24/R/x86_64-pc-linux-gnu-library/4.4" "/usr/local/lib/R/site-library"                   
+# [3] "/usr/lib/R/site-library"                          "/usr/lib/R/library"
+
+# under /usr/lib/R/library: 
+# KernSmooth  base   cluster    datasets   graphics  methods  nnet      spatial  stats4    tools
+# MASS        boot   codetools  foreign    grid      mgcv     parallel  splines  survival  translations
+# Matrix      class  compiler   grDevices  lattice   nlme     rpart     stats    tcltk     utils
+
+################################################################################
+# https://psyteachr.github.io/analysis-v2/updating-r-rstudio-and-packages.html
+# to update R 
+# install.packages("installr")
+# library(installr)
+# # Run the update function
+# updateR()
+################################################################################
+# to update package
+ 
+# Uninstall the problem package
+#installr::uninstall.packages("package_name")
+
+# update.packages(ask = FALSE, checkBuilt = TRUE)
+################################################################################
+# version checking
+packageVersion("mgcv")
+
+# library(foo, lib.loc="~/dev/foo/v1")    ## loads v1
+# library(foo, lib.loc="~/dev/foo/v2")    ## loads v2
+################################################################################
 
 
 
-# check if installed: installed.packages(car)  
-# also check here /home/yzheng24/R/x86_64-pc-linux-gnu-library/4.4
 
 
 
+# useful
 install.packages("tidyverse")
 install.packages("data.table")
 install.packages("arsenal")  
@@ -20,13 +52,11 @@ install.packages("arsenal")
 
 
 # input and db
-
-
-install.packages("haven") 
+install.packages("haven") # SAS  
 install.packages("foreign") 
-install.packages("XLConnect")  # java
-install.packages("xlsx")  # java
-install.packages("odbc")
+install.packages("XLConnect")  # need java
+install.packages("xlsx")  # need java
+install.packages("odbc") # SQL server 
 install.packages("RMySQL")
 #install.packages("RPostgresSQL")#package ‘RPostgresSQL’ is not available for this version of R
 install.packages("RSQLite")
