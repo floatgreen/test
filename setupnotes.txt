@@ -67,3 +67,9 @@ library(parallel)
 detectCores() # 20
  
  
+ https://support.posit.co/hc/en-us/articles/200532327-Managing-RStudio-Workbench-RStudio-Server
+ 
+ 
+ $ sudo rstudio-server stop
+$ sudo rstudio-server start
+$ sudo rstudio-server restart
