@@ -162,6 +162,9 @@ install.packages("usethis")
 # which git # already in my ubuntu 
 
 # https://happygitwithr.com/hello-git
+# https://jcoliver.github.io/learn-r/010-github.html
+
+
 
 # in my windows, from gitbash:
 # $ git config --global --list
@@ -189,10 +192,11 @@ install.packages("usethis")
 # https://github.com/settings/tokens and click “Generate token”. Look over the scopes; I highly recommend selecting “repo”, “user”, and “workflow” "gist".
 
 # https://gist.github.com/z3tt/3dab3535007acf108391649766409421
+ 
+
 
 
 #Or, from R, do:   
-
 usethis::create_github_token() # already selected the scopes.
 
 #credentials::set_github_pat() 
@@ -201,13 +205,17 @@ usethis::create_github_token() # already selected the scopes.
 ## extend the cache timeout to match the PAT validity period:
 #usethis::use_git_config(helper="cache --timeout=2600000") #> cache timeout ~30 days
 ## set personal access token:
-credentials::set_github_pat()
+#credentials::set_github_pat()
 gitcreds::gitcreds_set()
 ## or store it manually in '.Renviron':
 usethis::edit_r_environ()
 ## store your personal access token in the file that opens in your editor with:
 ## GITHUB_PAT=ghpXXXUsUC
 ## and make sure '.Renviron' ends with a newline
+
+# test after 15 min if github ask your usrname and pw 
+
+# or change to SSH  
 
 usethis::git_sitrep()
 
