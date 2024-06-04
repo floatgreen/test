@@ -230,6 +230,10 @@ gh::gh_whoami()
 
 
 
+# SSH 
+
+#ssh-keygen -t ed25519 -C "DESCRIPTIVE-COMMENT"
+#Tools > Global Options…> Git/SVN > Create RSA Key….
 
 
 
