@@ -1,0 +1,101 @@
+    1  ls
+    2  
+
+    7  sudo apt-get update 
+    8  sudo apt-get upgrade
+    9  sudo apt-get install -f
+   11  sudo apt update
+   12  sudo apt list --upgradable
+   13  sudo apt upgrade -y
+ 
+  
+   10  sudo apt install fuse
+   15  sudo apt install build-essential -y
+   16  sudo apt autoremove
+   17  cd /mnt/d
+   18  ls
+   19  mkdir  mylinux
+   20  cd mylinux/
+   21  pwd
+   22  cd ~
+   23  ls
+   24  mkdir mylinux
+   25  ls
+   36  ln -s /mnt/d/mylinux mylinux
+   37  ls
+   38  cd mylinux
+   39  mkdir AA
+   40  ls
+   41  sudo apt install r-base r-base-dev -y
+   42  R # (version too low) 
+   43  sudo apt-get remove r-base 
+   44  R
+   46  sudo apt-get autoremove
+   47  sudo apt-get remove r-base 
+   48  sudo apt-get remove r-base-dev 
+
+   49  sudo apt update
+   50  sudo apt install software-properties-common dirmngr -y
+   51  wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+    
+   53  wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc 
+   54  sudo apt install gedit
+   55  gedit
+   56  ls
+   57  wsl --update
+   58  ls
+   59  gedit
+   60  sudo apt -y install gnome
+   61  gedit
+   62  reboot
+   63  gedit
+   64  sudo apt install nautilus -y
+   65  sudo apt autoremove
+   66  nautilus
+   67  sudo apt install software-properties-common dirmngr -y
+   68  wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+   69  cd mylinux
+   70  wget  https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc
+   71  cp marutter_pubkey.asc  cran_ubuntu_key.asc
+   72  sudo cp cran_ubuntu_key.asc  /etc/apt/trusted.gpg.d
+   73  gpg --show-keys /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+   74  sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_release -cs)-cran40/"
+   75  sudo apt update
+   76  sudo apt install r-base r-base-dev -y
+   77  R
+   78  sudo apt -y install libgdal-dev
+   79  sudo apt -y install gdebi-core build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
+   80  wget https://download2.rstudio.org/server/rhel8/x86_64/rstudio-server-rhel-2024.04.1-748-x86_64.rpm
+   81  wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2024.04.1-748-amd64.deb
+   82  ls
+   83  sudo gdebi rstudio-server-2024.04.1-748-amd64.deb
+   84  sudo rstudio-server start
+   85  cd mylinux
+   86  ls
+   87  mkdir instalL_R
+   88  mv *.asc  instalL_R/
+   89  mv ../rstudio-server-2024.04.1-748-amd64.deb  instalL_R/
+   90  lscpu
+   91  free
+   92  free -h
+   93  sudo apt -y install libcurl4-openssl-dev
+   94  sudo apt -y install libfontconfig1-dev
+   95* sudo apt-get install libcurl4-openssl-dev
+sudo apt-get install libfontconfig1-dev
+sudo apt-get install libharfbuzz-dev libfribidi-dev
+sudo apt-get install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+   96  java -version
+   97  sudo apt -y install openjdk-19-jdk
+   98  sudo apt -y install openjdk-19-jre
+   99  sudo R CMD javareconf
+  100  sudo apt install cmake
+  101  which git
+  102  git config --global user.name "floatgreen"
+  103  git config --global user.email "yzheng24@stjude.org"
+  104  git config --global init.defaultBranch main
+  105  sudo dpkg -i pandoc-3.2-1-amd64.deb  
+  106  which git
+  107  git clone  https://github.com/floatgreen/GRASP.git
+  123  sudo apt install libcurl4-nss-dev 
+  124  cd ../..
+  125  history > history_for_print.txt

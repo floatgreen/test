@@ -44,9 +44,12 @@ install.packages("glmnet")
 install.packages("lme4")  
 install.packages("nlme")  
 # other machine learning models , need install seperatedly  
-
-
-
+install.packages("car")
+install.packages("irr") # kappa
+install.packages("DescTools")# Tools for Descriptive Statistics
+install.packages('Hmisc')
+install.packages('corrplot')
+ 
 
 
 # for reporting , visualization 
@@ -54,7 +57,6 @@ install.packages("nlme")
 # https://bookdown.org/yihui/rmarkdown-cookbook/
 
 
-install.packages('corrplot')
 install.packages("table1")
 install.packages("xtable")
 install.packages("kableExtra")
@@ -63,10 +65,31 @@ install.packages("kableExtra")
 
 # plot organization 
 install.packages("gridExtra")
-install.packages("patchwork")
+install.packages("patchwork") #https://patchwork.data-imaginist.com/
 
+install.packages("ggpubr")
+install.packages("ggh4x")
 
+install.packages("ggraph")
+install.packages("plotly")
 #https://r-graph-gallery.com/best-dataviz-packages.html
+
+
+# visualization 
+
+# ggvis - Interactive, web based graphics built with the grammar of graphics.
+# 
+# rgl - Interactive 3D visualizations with R
+# 
+# htmlwidgets  
+# 
+# googleVis  
+
+
+# install.packages("igraph") already there
+
+
+
 
 
 
@@ -156,10 +179,13 @@ gh::gh_whoami()
 usethis::use_git() # git init 
 
 
-#select Stageed and commit 
-
+#select Staged and commit 
 
 usethis::use_github()
+
+##############################
+
+
 
 
 
@@ -172,48 +198,20 @@ usethis::use_github()
 # survival 
 install.packages("survival") 
 install.packages("cmprsk")
-
-
 install.packages("survminer")
+install.packages("tidycmprsk")
+install.packages("ggsurvfit")
+ 
 # source("tools/YIng_tools_R.R") # example mutate_at(vars(contains('DATE')), ch_2_date_sas) 
 
 
-library(tidycmprsk)
-
-library(ggsurvfit)
 
 
 
 
 
 
-To visualize data
-
-ggplot2 - R's famous package for making beautiful graphics. ggplot2 lets you use the grammar of graphics to build layered, customizable plots.
-
-ggvis - Interactive, web based graphics built with the grammar of graphics.
-
-rgl - Interactive 3D visualizations with R
-
-htmlwidgets - A fast way to build interactive (javascript based) visualizations with R. Packages that implement htmlwidgets include:
-
-    leaflet (maps)
-    dygraphs (time series)
-    DT (tables)
-    diagrammeR (diagrams)
-    network3D (network graphs)
-    threeJS (3D scatterplots and globes).
-
- 
-
-googleVis - Let's you use Google Chart tools to visualize data in R. Google Chart tools used to be called Gapminder, the graphing software Hans Rosling made famous in hie TED talk.
-
-
-
-
-# others igraph 
-
-install.packages("igraph")
+###############################################################################
 
 #  https://www.bioconductor.org/install/ 
 
@@ -221,6 +219,28 @@ install.packages("BiocManager")
 
 
 # single cell related: 
+
+install.packages("Matrix")
+
+install.packages('Seurat')
+
+BiocManager::install("SingleCellExperiment")
+BiocManager::install("DuoClustering2018")
+BiocManager::install("scran")
+
+
+install.packages("Rtsne")
+install.packages("copula")
+install.packages("mgcv")
+install.packages("umap")
+ 
+
+
+# Coexpression
+install_github("ChangSuBiostats/CS-CORE")
+devtools::install_github("JSB-UCLA/scDesign2")
+devtools::install_github("SONGDONGYUAN1994/scDesign3")
+
 
 
 
@@ -241,9 +261,7 @@ install.packages("BiocManager")
 
 
 
-
-
-
+ 
 
 
 

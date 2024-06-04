@@ -1,0 +1,69 @@
+https://learn.microsoft.com/en-us/windows/wsl/tutorials/gui-apps
+
+install R
+https://phoenixnap.com/kb/install-r-ubuntu (method 2)
+https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-22-04
+
+
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc
+
+( this may not work but rename and sudo copy to the destination )
+
+sudo apt -y install gdebi-core build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev
+
+# and  other dependency :
+ cmake
+ libcurl4-openssl-dev
+ libfontconfig1-dev
+ libharfbuzz-dev libfribidi-dev
+ libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+ 
+ 
+ openjdk-19-jdk # java 
+ sudo R CMD javareconf # need do this 
+ 
+ 
+ apt install r-cran-rjava  # if hard to install 
+ 
+
+ 
+sudo dpkg -i pandoc-3.2-1-amd64.deb
+
+
+ 
+#sudo apt-get install default-jre
+#sudo apt-get install default-jdk
+
+
+
+On WSL is easier to use RStudio Server, then you can access an RStudio session from a browser.
+
+
+https://support.posit.co/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2
+ download R studio server
+ 
+ https://posit.co/download/rstudio-server/
+ 
+ wget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2024.04.1-748-amd64.deb
+ 
+ sudo gdebi rstudio-server-2024.04.1-748-amd64.deb
+ 
+ 
+ # to use: 
+ 
+ https://support.posit.co/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2
+ 
+ 
+ sudo rstudio-server start
+ 
+ and in browser: 
+ http://localhost:8787/
+ 
+ login with ubuntu usr and pw 
+ 
+ 
+ 
+library(parallel)
+detectCores() # 20
+ 
+ 
