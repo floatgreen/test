@@ -99,3 +99,8 @@ sudo apt-get install libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
   123  sudo apt install libcurl4-nss-dev 
   124  cd ../..
   125  history > history_for_print.txt
+  
+ sudo apt-get install libgsl-dev
+  
+  
+  

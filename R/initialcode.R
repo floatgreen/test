@@ -44,7 +44,7 @@ install.packages("glmnet")
 install.packages("lme4")  
 install.packages("nlme")  
 # other machine learning models , need install seperatedly  
-install.packages("car")
+#install.packages("car")
 install.packages("irr") # kappa
 install.packages("DescTools")# Tools for Descriptive Statistics
 install.packages('Hmisc')
@@ -230,7 +230,7 @@ BiocManager::install("scran")
 
 
 install.packages("Rtsne")
-install.packages("copula")
+install.packages("copula") # gsl sudo apt-get install libgsl-dev
 install.packages("mgcv")
 install.packages("umap")
  
