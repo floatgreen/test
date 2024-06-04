@@ -237,7 +237,7 @@ gh::gh_whoami()
 
 # publick key add to  github
 
-
+# the final solution for WSL is use SSH instead
 
 
 
