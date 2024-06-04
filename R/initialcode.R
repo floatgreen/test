@@ -159,7 +159,7 @@ usethis::use_git() # git init
 #select Stageed and commit 
 
 
-
+usethis::use_github()
 
 
 
