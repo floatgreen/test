@@ -171,21 +171,17 @@ usethis::create_github_token() # already selected the scopes.
 ## extend the cache timeout to match the PAT validity period:
 #usethis::use_git_config(helper="cache --timeout=2600000") #> cache timeout ~30 days
 ## set personal access token:
-#credentials::set_github_pat("YourPAT")
-
+credentials::set_github_pat()
+gitcreds::gitcreds_set()
 ## or store it manually in '.Renviron':
 usethis::edit_r_environ()
 ## store your personal access token in the file that opens in your editor with:
 ## GITHUB_PAT=ghpXXXUsUC
 ## and make sure '.Renviron' ends with a newline
 
-
-
+usethis::git_sitrep()
 
  
-
-
-
  
 
 gh::gh_whoami()
