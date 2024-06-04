@@ -158,20 +158,39 @@ install.packages("usethis")
 # set in github 
 # https://github.com/settings/tokens and click “Generate token”. Look over the scopes; I highly recommend selecting “repo”, “user”, and “workflow” "gist".
 
+# https://gist.github.com/z3tt/3dab3535007acf108391649766409421
+
+
 #Or, from R, do:   
 
 usethis::create_github_token() # already selected the scopes.
 
-# office_WSL 
+#credentials::set_github_pat() 
+#(in line 34) might store your PAT in a memory cache that
+## expires after 15 minutes or when the computer is rebooted. You thus may wish to do 
+## extend the cache timeout to match the PAT validity period:
+#usethis::use_git_config(helper="cache --timeout=2600000") #> cache timeout ~30 days
+## set personal access token:
+#credentials::set_github_pat("YourPAT")
+
+## or store it manually in '.Renviron':
+usethis::edit_r_environ()
+## store your personal access token in the file that opens in your editor with:
+## GITHUB_PAT=ghpXXXUsUC
+## and make sure '.Renviron' ends with a newline
 
 
-#ghpXXXUsUC
 
-gitcreds::gitcreds_set()
+
+ 
+
+
+
+ 
 
 gh::gh_whoami()
 
-
+ 
 #############################
 
 # Existing project, GitHub last ,
