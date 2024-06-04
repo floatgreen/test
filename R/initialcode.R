@@ -224,7 +224,19 @@ usethis::git_sitrep()
 
 gh::gh_whoami()
 
- 
+
+
+# seems .Renviron not working ,  I have also tried gh auth login in bash, it work but wait for 15 min?
+
+
+
+
+
+
+
+
+
+
 #############################
 
 # Existing project, GitHub last ,
