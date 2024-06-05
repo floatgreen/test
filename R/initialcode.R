@@ -207,8 +207,8 @@ usethis::create_github_token() # already selected the scopes.
 ## set personal access token:
 #credentials::set_github_pat()
 gitcreds::gitcreds_set()
-## or store it manually in '.Renviron':
-usethis::edit_r_environ()
+## or store it manually in '.Renviron': this is not safe, not use it , use SSH instead
+# usethis::edit_r_environ()
 ## store your personal access token in the file that opens in your editor with:
 ## GITHUB_PAT=ghpXXXUsUC
 ## and make sure '.Renviron' ends with a newline , not work! 
@@ -302,7 +302,7 @@ install.packages("umap")
 
 
 # Coexpression
-install_github("ChangSuBiostats/CS-CORE")
+devtools::install_github("ChangSuBiostats/CS-CORE")
 devtools::install_github("JSB-UCLA/scDesign2")
 devtools::install_github("SONGDONGYUAN1994/scDesign3")
 
