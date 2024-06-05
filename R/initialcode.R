@@ -211,18 +211,17 @@ gitcreds::gitcreds_set()
 usethis::edit_r_environ()
 ## store your personal access token in the file that opens in your editor with:
 ## GITHUB_PAT=ghpXXXUsUC
-## and make sure '.Renviron' ends with a newline
-
+## and make sure '.Renviron' ends with a newline , not work! 
 # test after 15 min if github ask your usrname and pw 
 
-# or change to SSH  
-
-usethis::git_sitrep()
-
- 
- 
 
 gh::gh_whoami()
+
+# or change to SSH  
+ 
+ 
+ 
+
 
 
 
@@ -235,12 +234,11 @@ gh::gh_whoami()
 #ssh-keygen -t ed25519 -C "DESCRIPTIVE-COMMENT"
 #Tools > Global Options…> Git/SVN > Create RSA Key….
 
-# publick key add to  github
+# public key add to  github
 
-# the final solution for WSL is use SSH instead
+# !!the final solution for WSL is use SSH instead
 
-
-
+# to change the https to git, if .git already exist:  modify .git/config 
 
 
 #############################
@@ -248,12 +246,8 @@ gh::gh_whoami()
 # Existing project, GitHub last ,
 
 usethis::use_git() # git init 
-
-
 #select Staged and commit 
-
 usethis::use_github()
-
 ##############################
 
 
