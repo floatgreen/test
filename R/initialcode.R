@@ -86,7 +86,7 @@ install.packages('corrplot')
 
 # https://bookdown.org/yihui/rmarkdown-cookbook/
 
-
+install.packages("gtsummary")
 install.packages("table1")
 install.packages("xtable")
 install.packages("kableExtra")
