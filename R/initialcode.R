@@ -118,7 +118,7 @@ install.packages("plotly")
 
 # install.packages("igraph") already there
 
-
+install.packages("qgraph")
 
 
 
